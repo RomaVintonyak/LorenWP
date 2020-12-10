@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="keywords" content="Loren - студія весільного декору та флористики"/>
     <title><?php bloginfo('description'); ?></title>
     <!--fav icon-->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url'); ?>/asets/img/fav_icon/apple-touch-icon.png">
