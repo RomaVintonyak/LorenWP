@@ -27,4 +27,18 @@ jQuery(document).ready(function(){
             scrollTop: introHeight - 50
         }, 1000);
     });
+    /* jump to card servicev */
+    var jumpItem = $(".jump");
+    jumpItem.hover(
+        function () {
+            $(this).animate({
+                marginTop: "-=3%",
+            }, 400);
+        },
+        function () {
+            $(this).animate({
+                marginTop: "0%",
+            }, 400);
+        }
+    );
 });

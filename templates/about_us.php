@@ -69,15 +69,13 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h4 class="mb-1"><strong>Чому саме Ми?...</strong></h4>
+                    <h4 class="mb-1"><strong><?php the_field('slider_title'); ?></strong></h4>
                     <ul>
-                        <li><p>Ми команда молодих, креативних декораторів та флористів з досвідом роботи.</p></li>
-                        <li><p>Ми завжди допоможемо в реалізації Ваших мрій, втілимо всі Ваші побажання.</p></li>
-                        <li><p>Ми слідкуємо за весільними тенденціями і йдемо в ногу з івент  - індустрією.</p></li>
-                        <li><p>Ми готові йти на зустріч і завжди можемо підлаштуватись під Ваш бюджет та
-                            запропонувати декор, який не вдарить по кишені.</p></li>
-                        <li><p>Вам не потрібно хвилюватися про те, як ми потрапимо до місця проведення весілля,
-                            транспорт -  це наші турботи.</p></li>
+                        <li><p><?php the_field('sliderText1'); ?></p></li>
+                        <li><p><?php the_field('sliderText2'); ?></p></li>
+                        <li><p><?php the_field('sliderText3'); ?></p></li>
+                        <li><p><?php the_field('sliderText4'); ?></p></li>
+                        <li><p><?php the_field('sliderText5'); ?></p></li>
                     </ul>
                 </div>
             </div>
@@ -85,9 +83,7 @@
         <hr class="my-5">
         <div class="container wow bounceInLeft">
             <div class="justify-content-center text-center">
-                <p class="black-text pt-2 mb-5"> Якщо Вам сподобались наші роботи, отже ми близькі по духу і обов'язково
-                    зрозуміємо Вас. Допоможемо втілити Ваші фантазії та побажання. Зробимо найважливіший для Вас день
-                    особливим. Щоб домовитись про зустріч зателефонуйте нам.</p>
+                <p class="black-text pt-2 mb-5"><?php the_field('aboutFooter'); ?></p>
             </div>
         </div>
     </div>
