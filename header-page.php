@@ -63,8 +63,9 @@
                         </h1>
                         <hr class="hr-light">
                         <h4 class="white-text my-4"><?php the_field('main_suptitle'); ?></h4>
-                        <a href="<?php echo get_page_uri(12)?>" class="btn btn-outline-white waves-effect waves-light"><?php the_field('main_btn'); ?><i
-                                class="fas fa-book pl-2"></i></a>
+                        <button type="button" class="scroll_down waves-effect" id="scroll_down">
+                        <?php the_field('main_btn'); ?>
+                        </button>
                     </div>
                 </div>
             </div>

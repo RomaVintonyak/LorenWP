@@ -1,4 +1,4 @@
-var image_save_msg = 'You Can Not Save images!';
+/*var image_save_msg = 'You Can Not Save images!';
 var no_menu_msg = 'Context Menu disabled!';
 var smessage = "Копіювання метеріалів заборонено авторським правом";
 
@@ -97,4 +97,4 @@ function show_wpcp_message(smessage) {
 
 function hide_message() {
     document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp hideme";
-}
+}*/

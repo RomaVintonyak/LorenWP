@@ -19,4 +19,12 @@ jQuery(document).ready(function(){
             scrollTop: 0
         }, 2500);
     });
+    /* scroll down btn main page */
+    var downBtn = $("#scroll_down");
+    downBtn.on("click", function(event){
+        event.preventDefault();
+        $("html, body").animate({
+            scrollTop: introHeight - 50
+        }, 1000);
+    });
 });
