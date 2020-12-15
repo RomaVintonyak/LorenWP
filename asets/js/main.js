@@ -33,12 +33,12 @@ jQuery(document).ready(function(){
         function () {
             $(this).animate({
                 marginTop: "-=3%",
-            }, 400);
+            }, 300);
         },
         function () {
             $(this).animate({
                 marginTop: "0%",
-            }, 400);
+            }, 200);
         }
     );
 });

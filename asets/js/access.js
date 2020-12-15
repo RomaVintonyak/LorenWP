@@ -1,3 +1,5 @@
+
+
 /*var image_save_msg = 'You Can Not Save images!';
 var no_menu_msg = 'Context Menu disabled!';
 var smessage = "Копіювання метеріалів заборонено авторським правом";

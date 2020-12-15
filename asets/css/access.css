@@ -1,4 +1,4 @@
-.unselectable {
+/*.unselectable {
     -moz-user-select:none;
     -webkit-user-select:none;
     cursor: default;
@@ -62,4 +62,4 @@ html
 .notice {
     background:#e3f7fc;
     border:1px solid #8ed9f6;
-}
+}*/
