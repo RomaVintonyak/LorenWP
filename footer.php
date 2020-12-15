@@ -44,6 +44,10 @@
 <div class="scroll_top" id="topBtn">
     <img src="<?php the_field('top_btn'); ?>" alt="arrow">
 </div>
+<!--copy protect-->
+<div class="copy_protect">
+    <p>Контент захищено авторським правом</p>
+</div>
 <!-- SCRIPTS -->
 <!--seting instafeed.js-->
 <script type="text/javascript">
