@@ -63,7 +63,7 @@
                         </h1>
                         <hr class="hr-light">
                         <h4 class="white-text my-4"><?php the_field('main_suptitle'); ?></h4>
-                        <button type="button" class="scroll_down waves-effect" id="scroll_down">
+                        <button type="button" class="scroll_down waves-effect waves-light" id="scroll_down">
                         <?php the_field('main_btn'); ?>
                         </button>
                     </div>

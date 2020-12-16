@@ -41,7 +41,7 @@
     </div>
 </footer>
 <!--scroll top btn-->
-<div class="scroll_top" id="topBtn">
+<div class="scroll_top waves-effect waves-classic" id="topBtn">
     <img src="<?php the_field('top_btn'); ?>" alt="arrow">
 </div>
 <!--copy protect-->

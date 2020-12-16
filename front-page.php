@@ -37,7 +37,7 @@
         </section>
         <hr class="hr-bold my-5">
     </div>
-    <div type="button" class="callback-bt">
+    <div type="button" class="callback-bt waves-effect waves-circle">
         <a href="tel:<?php the_field('call_link'); ?>" rel="nofollow">
             <div>
                 <i class="fa fa-phone"></i>

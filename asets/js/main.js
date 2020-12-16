@@ -1,7 +1,9 @@
 jQuery(document).ready(function(){
     "use script";
-    /* wow init */
+    /* wow, waves init */
     new WOW().init();
+    Waves.attach(".waves-effect");
+    Waves.init();
     /* back top btn */
     var topBtn = $("#topBtn");
     topBtn.hide(1000);
