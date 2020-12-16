@@ -3,7 +3,8 @@
 add_action('wp_enqueue_scripts', 'scriptStyle');
     function scriptStyle(){
         wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/asets/vendor/bootstrap/css/bootstrap.min.css');
-        wp_enqueue_style( 'mdb', get_template_directory_uri() . '/asets/vendor/bootstrap/css/mdb.min.css');
+		wp_enqueue_style( 'mdb', get_template_directory_uri() . '/asets/vendor/bootstrap/css/mdb.min.css');
+		wp_enqueue_style( 'lightbox', get_template_directory_uri() . '/asets/vendor/lightbox/lightbox.min.css');
         wp_enqueue_style( 'mainStyle', get_template_directory_uri() . '/asets/css/style.css');
         wp_enqueue_style( 'accesScc', get_template_directory_uri() . '/asets/css/access.css');
         wp_deregister_script( 'jquery' );
@@ -13,7 +14,7 @@ add_action('wp_enqueue_scripts', 'scriptStyle');
 		wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/asets/vendor/bootstrap/js/bootstrap.min.js');
 		
 		wp_enqueue_script( 'mdb', get_template_directory_uri() . '/asets/vendor/bootstrap/js/mdb.js');
-		
+		wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/asets/vendor/lightbox/lightbox-plus-jquery.min.js');
 		wp_enqueue_script( 'instaFeed', get_template_directory_uri() . '/asets/vendor/instaFeed/jquery.instagramFeed.min.js');
 		wp_enqueue_script( 'access', get_template_directory_uri() . '/asets/js/access.js');
 		wp_enqueue_script( 'main', get_template_directory_uri() . '/asets/js/main.js');

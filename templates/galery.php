@@ -9,134 +9,51 @@
     <div class="mt-5">
         <div class="container justify-content-center">
             <section id="galery" class="text-center mainBlock">
-                <h4 class="mb-5 font-weight-bold h2">Арка</h4>
-                <div class="row wow rotateInUpLeft">
-                    <div class="col-lg-4 col-md-12 mb-4">
-                        <div class="view overlay zoom mask flex-center">
-                            <figure class="photo">
-                                <a href="../img/galery/arka/big/1.jpeg" data-lightbox="roadtrip" alt="wedding"><img
-                                        id="arka1"
-                                        src="../img/galery/arka/small/1.jpeg"
-                                        alt="wedding"/></a>
-                            </figure>
+                <h4 class="mb-5 font-weight-bold h2"><?php the_field('arka_title'); ?></h4>
+                    <?php
+                    $post_arka = get_field('gelery_arka');
+                    if( $post_arka ): ?>
+                        <div class="row wow rotateInUpLeft">
+                            <?php foreach( $post_arka as $post ): 
+                                setup_postdata($post); ?>
+                                <div class="col-lg-4 col-md-12 mb-4">
+                                    <div class="view overlay zoom mask flex-center">
+                                        <figure class="photo">
+                                            <a href="<?php the_field('img_post'); ?>" data-lightbox="roadtrip" alt="wedding">
+                                                <img src="<?php the_field('miniatyura_galereyi'); ?>" alt="wedding"/>
+                                            </a>
+                                        </figure> 
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="view overlay zoom mask flex-center">
-                            <figure class="photo">
-                                <a href="../img/galery/arka/big/2.jpeg" data-lightbox="roadtrip" alt="wedding"><img
-                                        id="arka2"
-                                        src="../img/galery/arka/small/2.jpeg"
-                                        alt="wedding"/></a>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="view overlay mask flex-center zoom">
-                            <figure class="photo">
-                                <a href="../img/galery/arka/big/3.jpeg" data-lightbox="roadtrip" alt="wedding"><img
-                                        id="arka3"
-                                        src="../img/galery/arka/small/3.jpeg"
-                                        alt="wedding"/></a>
+                        <?php 
+                        wp_reset_postdata(); ?>
+                    <?php endif; ?>    
+                <h4 class="mb-5 font-weight-bold h2"><?php the_field('fotozona_title'); ?></h4>
+                    <?php
+                        $post_fotozona = get_field('gelery_fotozona');
+                        if( $post_fotozona ): ?>
+                            <div class="row wow rotateInUpLeft">
+                                <?php foreach( $post_fotozona as $post ): 
+                                    setup_postdata($post); ?>
+                                    <div class="col-lg-4 col-md-12 mb-4">
+                                        <div class="view overlay zoom mask flex-center">
+                                            <figure class="photo">
+                                                <a href="<?php the_field('img_post'); ?>" data-lightbox="roadtrip" alt="wedding">
+                                                    <img src="<?php the_field('miniatyura_galereyi'); ?>" alt="wedding"/>
+                                                </a>
+                                            </figure> 
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                            <?php 
+                            wp_reset_postdata(); ?>
+                        <?php endif; ?>
 
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 mb-4">
-                        <div class="view overlay mask flex-center zoom">
-                            <figure class="photo">
-                                <a href="../img/galery/arka/big/4.jpg" data-lightbox="roadtrip" alt="wedding"><img
-                                        id="arka4"
-                                        src="../img/galery/arka/small/4.jpg"
-                                        alt="wedding"/></a>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="view overlay mask flex-center zoom">
-                            <figure class="photo">
-                                <a href="../img/galery/arka/big/5.jpg" data-lightbox="roadtrip" alt="wedding"><img
-                                        id="arka5"
-                                        src="../img/galery/arka/small/5.jpg"
-                                        alt="wedding"/></a>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="view overlay mask flex-center zoom">
-                            <figure class="photo">
-                                <a href="../img/galery/arka/big/6.jpeg" data-lightbox="roadtrip" alt="wedding"><img
-                                        id="arka6"
-                                        src="../img/galery/arka/small/6.jpeg"
-                                        alt="wedding"/></a>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <h4 class="mb-5 font-weight-bold h2">Фотозона</h4>
-                <div class="row wow rotateInUpRight">
-                    <div class="col-lg-4 col-md-12 mb-4">
-                        <div class="view overlay zoom mask flex-center">
-                            <figure class="photo">
-                                <a href="../img/galery/foto/big/1.jpeg" data-lightbox="roadtrip" alt="wedding"><img
-                                        id="foto1"
-                                        src="../img/galery/foto/small/1.jpeg"
-                                        alt="wedding"/></a>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="view overlay zoom mask flex-center">
-                            <figure class="photo">
-                                <a href="../img/galery/foto/big/2.jpeg" data-lightbox="roadtrip" alt="wedding"><img
-                                        id="foto2"
-                                        src="../img/galery/foto/small/2.jpeg"
-                                        alt="wedding"/></a>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="view overlay mask flex-center zoom">
-                            <figure class="photo">
-                                <a href="../img/galery/foto/big/3.jpeg" data-lightbox="roadtrip" alt="wedding"><img
-                                        id="foto3"
-                                        src="../img/galery/foto/small/3.jpeg"
-                                        alt="wedding"/></a>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 mb-4">
-                        <div class="view overlay mask flex-center zoom">
-                            <figure class="photo">
-                                <a href="../img/galery/foto/big/4.jpeg" data-lightbox="roadtrip" alt="wedding"><img
-                                        id="foto4"
-                                        src="../img/galery/foto/small/4.jpeg"
-                                        alt="wedding"/></a>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="view overlay mask flex-center zoom">
-                            <figure class="photo">
-                                <a href="../img/galery/foto/big/5.jpeg" data-lightbox="roadtrip" alt="wedding"><img
-                                        id="foto5"
-                                        src="../img/galery/foto/small/5.jpeg"
-                                        alt="wedding"/></a>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="view overlay mask flex-center zoom">
-                            <figure class="photo">
-                                <a href="../img/galery/foto/big/6.jpg" data-lightbox="roadtrip" alt="wedding"><img
-                                        id="foto6"
-                                        src="../img/galery/foto/small/6.jpg"
-                                        alt="wedding"/></a>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <h4 class="mb-5 font-weight-bold h2">Зона молодих</h4>
+
+                <!--<h4 class="mb-5 font-weight-bold h2">Зона молодих</h4>
                 <div class="row wow rotateInUpLeft">
                     <div class="col-lg-4 col-md-12 mb-4">
                         <div class="view overlay zoom mask flex-center">
@@ -327,7 +244,10 @@
                             </figure>
                         </div>
                     </div>
-                </div>
+                </div>-->
+
+
+
             </section>
             <hr class="my-5">
         </div>
