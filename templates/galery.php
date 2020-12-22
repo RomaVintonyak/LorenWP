@@ -96,7 +96,7 @@
                     <?php
                         $post_poligrafiya = get_field('galery_poligrafiya');
                         if( $post_poligrafiya ): ?>
-                            <div class="row ПоліграфІ rotateInUpLeft">
+                            <div class="row wow rotateInUpLeft">
                                 <?php foreach( $post_poligrafiya as $post ): 
                                     setup_postdata($post); ?>
                                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
