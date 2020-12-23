@@ -130,13 +130,16 @@ html, body, header, #intro {
 /*****end index page********/
 
 /********our-services******/
+.card{
+    transition: box-shadow 0.2s linear;
+}
 .card:hover {
     -webkit-box-shadow: -1px 9px 40px -12px rgb(25, 25, 25);
     -moz-box-shadow: -1px 9px 40px -12px rgb(25, 25, 25);
-    -box-shadow: -1px 9px 40px -12px rgb(25, 25, 25);
+    box-shadow: -1px 9px 40px -12px rgb(25, 25, 25);  
 }
 
-.col-lg-4 {
+.jump {
     padding: 1%;
 }
 
@@ -190,7 +193,7 @@ button.scroll_down {
     height: 30px;
     width: 60px;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1.5px solid white;
     border-radius: 2px;
     cursor: pointer;
     outline: none;
